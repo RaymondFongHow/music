@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gallery - Raymond Fong How</title>
+
+    <!-- <script type="text/javascript" src="assets/js/fading_nav_bar.js"></script> -->
+
+    <!--
+        use: <link rel="stylesheet" href="assets/css">
+    -->
+    <link rel="stylesheet" href="assets/css/style-general.css">
+    <link rel="stylesheet" href="assets/css/style-fonts.css">
+    <link rel="stylesheet" href="assets/css/style-nav.css">
+    <link rel="stylesheet" href="assets/css/style-intro.css">
+    <link rel="stylesheet" href="assets/css/style-coming_soon.css">
+</head>
+<body>
+    <header>
+        <div class="header_image">
+            <img src="assets/images/index/down-the-brook.jpg" alt="Down the Brook">
+        </div>
+        <nav class="navbar">
+            <a class="brand" href="index.html">
+                <div class="brand_box">
+                    <img src="assets/images/common/logo-white.png" alt="LOGO">
+                    <div>
+                        <p class="title">Gallery</p>
+                        <p class="tagline">Raymond Fong How</p>
+                    </div>
+                </div>
+            </a>
+            <a class="nav_opt" href="albums.html">
+                <p>Albums</p>
+            </a>
+            <a class="nav_opt" href="coming_soon.html">
+                <p>All Works</p>
+            </a>
+            <a class="nav_opt" href="coming_soon.html">
+                <p>About Me</p>
+            </a>
+        </nav>
+    </header>
+    <script>
+        console.log("hi");
+        const navEl = document.querySelector('.navbar');
+        console.log(navEl);
+        window.addEventListener('scroll', () => {
+            if (window. scrollY >= 625) {
+                navEl.classList.add("navbar-scrolled")
+            } else if (window. scrollY < 625) {
+                navEl.classList.remove("navbar-scrolled")
+            }
+        })
+    </script>
+    <main class="index_main">
+        <section class="intro">
+            <div class="my_photo">
+                <img src="assets/images/index/me_wild.png" alt="My Photo">
+            </div>
+            <div class="my_intro_text">
+                <div class="my_intro_title">
+                    <p>Hi, I'm Raymond.</p>
+                </div>
+                <div class="my_intro_bio">
+                    <p>I am a student photography enthusiast.
+                        I firmly believe that form
+                        <span style="font-style: italic;">per se</span> 
+                        is content, and I see great value in 
+                        photographic composition.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="coming_soon">
+            <p>Coming Soon</p>
+        </section>
+    </main>
+</body>
+</html>

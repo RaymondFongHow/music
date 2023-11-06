@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gallery - Albums</title>
+
+    <!-- <script type="text/javascript" src="assets/js/fading_nav_bar.js"></script> -->
+
+    <!--
+        use: <link rel="stylesheet" href="assets/css">
+    -->
+    <link rel="stylesheet" href="assets/css/style-general.css">
+    <link rel="stylesheet" href="assets/css/style-fonts.css">
+    <link rel="stylesheet" href="assets/css/style-nav.css">
+    <link rel="stylesheet" href="assets/css/style-intro.css">
+    <link rel="stylesheet" href="assets/css/style-coming_soon.css">
+    <link rel="stylesheet" href="assets/css/style-albums.css">
+</head>
+<body>
+    <header>
+        <div class="header_image_half">
+            <img src="assets/images/albums/assembling_pages.png" alt="Assembling Pages">
+        </div>
+        <nav class="navbar">
+            <a class="brand" href="index.html">
+                <div class="brand_box">
+                    <img src="assets/images/common/logo-white.png" alt="LOGO">
+                    <div>
+                        <p class="title">Gallery</p>
+                        <p class="tagline">Raymond Fong How</p>
+                    </div>
+                </div>
+            </a>
+            <a class="nav_opt" href="albums.html">
+                <p>Albums</p>
+            </a>
+            <a class="nav_opt" href="all_works.html">
+                <p>All Works</p>
+            </a>
+            <a class="nav_opt" href="about_me.html">
+                <p>About Me</p>
+            </a>
+        </nav>
+    </header>
+    <script>
+        console.log("hi");
+        const navEl = document.querySelector('.navbar');
+        console.log(navEl);
+        window.addEventListener('scroll', () => {
+            if (window. scrollY >= 300) {
+                navEl.classList.add("navbar-scrolled")
+            } else if (window. scrollY < 300) {
+                navEl.classList.remove("navbar-scrolled")
+            }
+        })
+    </script>
+    <main>
+        <section class="albums">
+            <div class="albums_heading">
+                <p>
+                    Albums<br>
+                    <span style="display: inline-block; transform: rotate(90deg);">></span>
+                </p>
+            </div>
+            <div class="album_info">
+                <div class="album_header">
+                    <p><a href="album_pages/precipitation.html"><span lang="cn">霏</span> Precipitation</a>, Jan 2023</p>
+                </div>
+                <div class="album_intro">
+                    <p>In the timely spring rain, all creatures are nourished, 
+                        awakening from their slumber. People marvel at the 
+                        gentle drizzle and praise the might of the deluge. 
+                        Standing in rain, I found myself pondering: how would rain 
+                        appear through my lens? What other forms does it take? 
+                        In Singapore, where four seasons are absent, how does 
+                        rain possess its own unique charm? How would the falling 
+                        raindrops stir the depths of people's minds? These 
+                        musings inspired me to curate a collection of photographs 
+                        taken over the past two years, capturing the essence of 
+                        rain in all its forms - be it the falling rain, the 
+                        lively splashes and ripples of raindrops, the graceful 
+                        dance of snow, or the ephemeral beauty of rainbows 
+                        that emerge after storms. With that, I'm thrilled to 
+                        present to you the photo album <span style="font-style: italic;">Precipitation.</span></p>
+                </div>
+            </div>
+            <div class="album_info">
+                <div class="album_header">
+                    <p><a href="https://www.example.com">Coming Soon</a></p>
+                </div>
+                <div class="album_intro">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+                        elit, sed do eiusmod tempor incididunt ut labore 
+                        et dolore magna aliqua. Pharetra sit amet aliquam 
+                        id diam maecenas.</p><p>
+                        Eget lorem dolor sed viverra. 
+                        Turpis egestas pretium aenean pharetra magna ac 
+                        placerat vestibulum. Tellus at urna condimentum 
+                        mattis pellentesque id nibh. Venenatis cras sed 
+                        felis eget velit aliquet.</p><p>
+                        Nunc vel risus commodo 
+                        viverra maecenas accumsan. Nunc sed augue lacus 
+                        viverra. Leo in vitae turpis massa sed. Mauris 
+                        pellentesque pulvinar pellentesque habitant morbi 
+                        tristique senectus et.</p>
+                </div>
+            </div>
+            <div class="album_info">
+                <div class="album_header">
+                    <p><a href="https://www.example.com">Coming Soon</a></p>
+                </div>
+                <div class="album_intro">
+                    <p>Faucibus purus in massa 
+                        tempor nec feugiat nisl pretium. Sapien nec 
+                        sagittis aliquam malesuada bibendum arcu vitae 
+                        elementum. Aliquet nibh praesent tristique magna 
+                        sit amet purus gravida quis. Enim neque volutpat 
+                        ac tincidunt.</p><p>
+                        Tristique senectus et netus et 
+                        malesuada fames ac turpis egestas. Maecenas 
+                        volutpat blandit aliquam etiam erat velit 
+                        scelerisque in. Diam volutpat commodo sed egestas 
+                        egestas fringilla.</p><p>
+                        Volutpat sed cras ornare arcu 
+                        dui vivamus arcu felis bibendum. Adipiscing at in 
+                        tellus integer feugiat scelerisque varius. 
+                        Et ultrices neque ornare aenean euismod elementum 
+                        nisi quis eleifend.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
